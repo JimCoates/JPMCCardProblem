@@ -36,13 +36,14 @@ public class Flushes {
         return false;
     }
 
-    public boolean checkConsecutieCards(){
+    public boolean checkConsecutieCards() {
         Collections.sort(hand);
-        for (int i = 0; i < hand.size()-1 ; i++) {
-            if(hand.get(i) + 1 != hand.get(i+1))
+        for (int i = 0; i < hand.size() - 1; i++) {
+            if (Integer.parseInt(String.valueOf(hand.get(i).charAt(0))) + 1 != Integer.parseInt(String.valueOf(hand.get(i + 1).charAt(0)))) {
                 return false;
+            }
+            return true;
         }
-        return true;
     }
 
     public boolean hasStraightFlush(){
