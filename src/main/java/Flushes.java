@@ -42,8 +42,8 @@ public class Flushes {
             if (Integer.parseInt(String.valueOf(hand.get(i).charAt(0))) + 1 != Integer.parseInt(String.valueOf(hand.get(i + 1).charAt(0)))) {
                 return false;
             }
-            return true;
         }
+        return true;
     }
 
     public boolean hasStraightFlush(){
